@@ -21,12 +21,18 @@
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
-        h1 {
+        h1, h2 {
             color: #d4a017;
             text-align: center;
-            font-size: 2.5em;
             margin-bottom: 30px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
         }
         p {
             line-height: 1.6;
@@ -47,15 +53,70 @@
         .video-link:hover {
             color: #ffd700;
         }
+        .section {
+            background-color: #2a1010;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        li:before {
+            content: "🍫";
+            position: absolute;
+            left: -25px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🍫 Chocolate Paradise 🍫</h1>
-        <p>Welcome to our chocolate-themed page! Here you can discover amazing content about chocolate.</p>
+        
         <div class="video-container">
             <p>Check out this great video about chocolate: </p>
             <p>Content about chocolate will be added here...</p>
+        </div>
+
+        <h2>History of Chocolate</h2>
+        <div class="section">
+            <p>Chocolate has a rich history dating back to the ancient Mayans and Aztecs, who first discovered the cacao tree and its beans. They created a bitter drink called "xocoatl" which was believed to be a gift from the gods.</p>
+        </div>
+
+        <h2>Types of Chocolate</h2>
+        <div class="section">
+            <ul>
+                <li>Dark Chocolate: Contains 50-90% cocoa solids</li>
+                <li>Milk Chocolate: Contains milk powder or condensed milk</li>
+                <li>White Chocolate: Made from cocoa butter, sugar, and milk</li>
+                <li>Ruby Chocolate: A naturally pink chocolate with berry-like flavor</li>
+            </ul>
+        </div>
+
+        <h2>Health Benefits</h2>
+        <div class="section">
+            <p>Dark chocolate, in particular, is known for its health benefits:</p>
+            <ul>
+                <li>Rich in antioxidants</li>
+                <li>May improve heart health</li>
+                <li>Contains essential minerals</li>
+                <li>Can boost mood and cognitive function</li>
+            </ul>
+        </div>
+
+        <h2>Fun Facts</h2>
+        <div class="section">
+            <ul>
+                <li>The word chocolate comes from "xocolatl" in Nahuatl</li>
+                <li>Chocolate melts at around 93°F (34°C)</li>
+                <li>The first chocolate bar was created in 1847</li>
+                <li>The average cocoa tree produces 2-3 pounds of chocolate per year</li>
+            </ul>
         </div>
     </div>
 </body>
